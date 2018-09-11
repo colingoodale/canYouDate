@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="../../style.css" />
 
 </head>
+<style>
+    .link {
+        text-align: center;
+        padding: 6px;
+    }
+
+    #githublink {
+        border-left-color: rgb(11, 11, 12);
+        border-left-width: 6px;
+        border-left-style: dashed;
+    }
+</style>
 
 <body>
-
+    <div class="container jumbotron">
+        <h1>Friend Finder!</h1>
+        <p>Find the perfect friend here, or at least what a math funciton thnks is the closest!</p>
+        <a href="/survey"><button id="surveyButton" class="btn start-btn">Survey</button></a>
+    </div>
+    <a href="/api/friends" class="link">Available Candidates</a>
+    <a href="https://github.com/colingoodale/canYouDate" id="githublink" class="link">GitHub Repo</a>
 
     <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
         crossorigin='anonymous'></script>
-    <script src="../../server.js"></script>
-    <script>
-
-
-
-
-
-    </script>
 </body>
